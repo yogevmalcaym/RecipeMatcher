@@ -1,5 +1,4 @@
 import {css} from 'styled-components'
-import {getColor} from 'styles/helper';
 
 export const Main = css`
     height: 100%;
@@ -7,11 +6,14 @@ export const Main = css`
     display: flex;
     flex-direction: column;
     align-content: center;
+    text-align: center;
     
-    > .content {
+    > .router {
+        padding: 30px 10% 0 10%;
         display: flex;
         overflow: auto;
-        width: 100%;
         height: 100%;
+        width: 100%;
+        align-self: center;
     }
 `;

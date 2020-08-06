@@ -1,5 +1,4 @@
-import {createGlobalStyle, css} from 'styled-components';
-import {getColor} from 'styles/helper';
+import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     html,body {
@@ -10,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     
   
     body {
-        background-color: ${getColor('background')};
+        background-color: #FFF;
         font-family: 'Tinos', 'Roboto', sans-serif !important;
         direction: rtl;
     } 

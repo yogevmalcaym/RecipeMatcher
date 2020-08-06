@@ -1,8 +1,8 @@
 import React from "react";
-import {ThemeProvider} from 'styled-components';
-import theme from 'styles/theme';
 import Main from './containers/Main/Main';
 import * as styles from './styles';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ErrorBoundary extends React.Component {
     componentDidCatch(error, info) {
@@ -14,14 +14,10 @@ class ErrorBoundary extends React.Component {
     }
 }
 
-export default () => {
-
-    return <React.Fragment>
-            <ErrorBoundary>
-                <ThemeProvider {...{theme}}>
-                    <styles.GlobalStyle/>
-                    <Main/>
-                </ThemeProvider>
-            </ErrorBoundary>
-        </React.Fragment>
-};
+export default () => <>
+    <ErrorBoundary>
+        <styles.GlobalStyle/>
+        <Main/>
+    </ErrorBoundary>
+</>
+;

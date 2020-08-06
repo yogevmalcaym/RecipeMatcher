@@ -28,16 +28,12 @@ module.exports = {
     resolve: {
         extensions: ['*', '.js', '.jsx'],
         alias: {
-            styles: path.resolve(__dirname, 'src/globals/styles'),
-            routes: path.resolve(__dirname, 'src/routes'),
             utils: path.resolve(__dirname, 'src/globals/utils'),
-            store: path.resolve(__dirname, 'src/store'),
-            "@common-components": path.resolve(__dirname, 'src/commonComponents')
+            "@common-components": path.resolve(__dirname, 'src/commonComponents'),
         }
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',
         filename: 'bundle.js',
     },
     plugins: [
