@@ -1,13 +1,14 @@
-import classnames from 'classnames';
 import {Ingredient, List} from '@common-components';
 import React, {useState, useCallback, memo, useEffect} from 'react';
 import styled from 'styled-components';
 import * as styles from './styles';
 
 const ListItem = memo(({_id: id, name, onAdd}) => {
+
     const onClick = useCallback(() =>
             onAdd({id})
         , [onAdd]);
+
     return <Ingredient {...{onClick}}>{name}</Ingredient>
 })
 

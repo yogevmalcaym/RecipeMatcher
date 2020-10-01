@@ -22,6 +22,7 @@ export const Welcome = css`
         border-radius: 10px;
         background-color: forestgreen;
     }
+    
 `;
 
 

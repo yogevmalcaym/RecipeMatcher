@@ -2,9 +2,9 @@ import {css} from 'styled-components';
 
 export const LoaderWrapper = css`
     display: flex;
-    margin: auto;
+    height: 100vh;
 
-    > .loader {
+    > div {
         margin: auto;
     }
 `;

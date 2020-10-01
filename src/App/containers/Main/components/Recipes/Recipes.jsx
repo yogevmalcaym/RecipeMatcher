@@ -12,7 +12,7 @@ export default styled(memo(({className, ingredients, navigate}) => {
 
     useEffect(() => {
         (async () => {
-            const recipes = await helper.getRecipe(JSON.stringify(ingredients.split(',')));
+            const recipes = await helper.getRecipe(ingredients);
             setRecipes(recipes);
         })();
     }, [setRecipes]);
