@@ -15,21 +15,23 @@ const ListItem = memo(({_id: id, name, onAdd}) => {
 export default styled(({className, data, onAdd}) => {
         const [searchText, setSearchText] = useState('');
 
-        const onChange = useCallback(e => {
-            setSearchText(e.target.value)
-        }, []);
+        const onChange = useCallback(e =>
+                setSearchText(e.target.value)
+            , [setSearchText]);
 
-        const filteredDataKeys = useMemo(Object.keys(data).filter((id) =>
+        const filteredDataKeys = useMemo(() => Object.keys(data).filter((id) =>
             data[id].name.includes(searchText)
         ), [searchText, data]);
 
         return <div {...{className}}>
-            <h4>בחר מצרכים</h4>
-            {/*<input {...{value: searchText, onChange}}/>*/}
+            <div className='header'>
+                <input {...{value: searchText, onChange}}/>
+                <h4>בחר מצרכים</h4>
+
+            </div>
+
             <List className="available-list">
-                {Object.keys(data).map((id) =>
-                    <ListItem {...{key: id, ...data[id], onAdd}}/>
-                )}
+                {filteredDataKeys.map(id => <ListItem {...{key: id, ...data[id], onAdd}}/>)}
             </List>
         </div>
     }

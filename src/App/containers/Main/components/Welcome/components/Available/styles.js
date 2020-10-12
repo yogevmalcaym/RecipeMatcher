@@ -6,12 +6,24 @@ export const Available = css`
     display: flex;
     flex-direction: column;
     
-    > h4 {
-        padding: 2px 10px;        
-        box-shadow: 0px 3px 4px -3px #bababa;
-        align-self: center;
-        margin-top: 0;
-        width: fit-content;
+    > .header {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+        > input {
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        
+        > h4 {
+            padding: 2px 10px;        
+            box-shadow: 0px 3px 4px -3px #bababa;
+            width: fit-content;
+        }
     }
     
     > .available-list {
