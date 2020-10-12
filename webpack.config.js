@@ -44,7 +44,8 @@ module.exports = {
         contentBase: './dist',
         historyApiFallback: true,
         hot: true,
-        open: true
+        open: true,
+        host: '10.10.248.98'
     },
     devtool: 'inline-source-map',
 };

@@ -19,9 +19,9 @@ export default styled(({className, data, onAdd}) => {
             setSearchText(e.target.value)
         }, []);
 
-        // const filteredDataKeys = useMemo(Object.keys(data).filter((id) =>
-        //     data[id].name.includes(searchText)
-        // ), [searchText, data]);
+        const filteredDataKeys = useMemo(Object.keys(data).filter((id) =>
+            data[id].name.includes(searchText)
+        ), [searchText, data]);
 
         return <div {...{className}}>
             <h4>בחר מצרכים</h4>
