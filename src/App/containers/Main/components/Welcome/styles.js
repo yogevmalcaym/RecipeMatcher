@@ -15,12 +15,14 @@ export const Welcome = css`
     align-items: center;
     
     > .get-a-recipe {
-        width: 80%;
+        width: 290px;
         padding: 10px 0px;
         font-size: 30px;
         cursor: pointer;
         border-radius: 10px;
-        background-color: forestgreen;
+        //background-color: #5fb75f7a;
+        background-color: #322f3d;
+        color: #87556f;
     }
     
 `;

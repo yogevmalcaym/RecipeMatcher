@@ -5,12 +5,13 @@ export const Header = css`
     justify-content: center;
     
     > span {
+        color: #87556f;
+        background-color: #322f3d;
         cursor: pointer;
         justify-content: center;
         align-items: center;
         display: flex;
         font-size: 30px;
-        color: #666363;
         width: 30px;
         height: 30px;
         border-radius: 40px;

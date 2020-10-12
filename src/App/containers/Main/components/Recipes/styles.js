@@ -9,11 +9,12 @@ export const Recipes = css`
     padding: 0 20px;
                 
     > .back-to-welcome {
-            width: 80%;
+            width: 290px;
             padding: 10px 0px;
             font-size: 30px;
             cursor: pointer;
             border-radius: 10px;
-            background-color: #dd1b1b;
+            background-color: #322f3d;
+            color: #87556f;
         }
 `;

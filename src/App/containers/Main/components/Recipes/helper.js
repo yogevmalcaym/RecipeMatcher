@@ -29,6 +29,6 @@ export const getRecipe = async (ingredients) => {
 
     } catch (error) {
         console.error(error);
-        alert("An error occurred, please refresh the page.");
+        alert("An error occurred, please refresh the page. ");
     }
 }

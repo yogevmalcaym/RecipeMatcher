@@ -10,14 +10,14 @@ const ListItem = memo(({_id: id, name, onRemove}) => {
     const onClick = useCallback(() =>
             onRemove({id})
         , [onRemove]);
-    return <Ingredient {...{onClick}}>{name}</Ingredient>
+    return <Ingredient {...{onClick, className: "chosen-item"}}>{name}</Ingredient>
 })
 
 
 export default styled(memo(({className, data, onRemove}) => {
         return <div {...{className}}>
-            <h4>Chosen Ingredients</h4>
-            <List  className = "chosen-list">
+            <h4>המצרכים שנבחרו</h4>
+            <List className="chosen-list">
                 {Object.keys(data).map((id) =>
                     <ListItem {...{key: id, ...data[id], onRemove}}/>
                 )}

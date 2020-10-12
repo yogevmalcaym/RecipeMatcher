@@ -46,7 +46,7 @@ export default styled(memo(({className, navigate}) => {
         const onGetRecipeClicked = useCallback(() => {
                 const chosenIngredientsKeys = Object.keys(chosen);
                 if (chosenIngredientsKeys.length === 0)
-                    alert("You must choose at least one ingredient");
+                    alert("צריך לבחור לפחות מצרך אחד.");
                 else
                     navigate(`recipe/${chosenIngredientsKeys}`);
 
@@ -59,7 +59,7 @@ export default styled(memo(({className, navigate}) => {
                     <Available {...{data: available, onAdd}}/>
                     <ChosenList {...{data: chosen, onRemove}}/>
                 </ListsWrapper>
-                <div {...{onClick: onGetRecipeClicked, className: "get-a-recipe"}}>Get a recipe</div>
+                <div {...{onClick: onGetRecipeClicked, className: "get-a-recipe"}}>הצג מתכונים</div>
             </div> :
             <Loader/>;
     }

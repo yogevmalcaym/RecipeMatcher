@@ -9,6 +9,7 @@ export const Main = css`
     text-align: center;
     
     > .router {
+        background-color: #4b5d67;
         justify-content: center;
         padding: 30px 10% 0 10%;
         display: flex;

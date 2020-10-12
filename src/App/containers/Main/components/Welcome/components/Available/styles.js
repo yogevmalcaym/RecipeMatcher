@@ -1,8 +1,7 @@
 import {css} from 'styled-components';
 
 export const Available = css`
-    flex-grow: 1;
-    max-height: calc(50% - 35px);
+    flex: 2 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,11 +15,17 @@ export const Available = css`
     }
     
     > .available-list {
+        padding: 10px;
         flex-wrap: wrap;
-        > .ingredient {
+        
+        > .available-item {
+            
+            box-shadow: 0px 0px 2px 2px #59405c;
+            
             &:hover {
-              background-color: forestgreen;
-              box-shadow: 0px 0px 2px 3px #bababa;
+                
+                background-color: #87556f;  
+                
             }
         }
     }

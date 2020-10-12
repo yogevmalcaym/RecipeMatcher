@@ -6,5 +6,9 @@ export const LoaderWrapper = css`
 
     > div {
         margin: auto;
+        
+        > svg {
+            fill: #87556f
+        }
     }
 `;

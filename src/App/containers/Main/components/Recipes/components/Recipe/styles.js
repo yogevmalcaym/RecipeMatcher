@@ -13,7 +13,12 @@ export const Recipe = css`
     }
     
     h4 {
-        margin: 10px 0 20px 0;
+        padding: 2px 10px;
+        box-shadow: 0px 3px 4px -3px #bababa;
+        align-self: center;
+        width: fit-content;
+        margin: 10px auto 20px auto;
+      
     }
     
     .score {

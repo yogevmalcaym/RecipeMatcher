@@ -38,7 +38,7 @@ export default styled(memo(({className, ingredients, navigate}) => {
                 currentIndex: index
             }}/>
             <Recipe {...{data: recipes[index]}}/>
-            <div {...{onClick: onBackToWelcome, className: "back-to-welcome"}}>Choose other ingredients</div>
+            <div {...{onClick: onBackToWelcome, className: "back-to-welcome"}}>חזרה לעריכת מצרכים</div>
         </div> :
         <Loader/>;
 }))`${styles.Recipes}`;
