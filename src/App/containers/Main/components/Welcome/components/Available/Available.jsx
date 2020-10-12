@@ -25,6 +25,7 @@ export default styled(({className, data, onAdd}) => {
 
         return <div {...{className}}>
             <div className='header'>
+                <span>חיפוש:</span>
                 <input {...{value: searchText, onChange}}/>
                 <h4>בחר מצרכים</h4>
 

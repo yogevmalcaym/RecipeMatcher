@@ -11,6 +11,13 @@ export const Available = css`
         position: relative;
         justify-content: center;
         
+        > span {
+            position: absolute;
+            right: -51px;
+            top: 5px;
+            font-size: 20px;
+        }
+        
         > input {
             position: absolute;
             right: 10px;
