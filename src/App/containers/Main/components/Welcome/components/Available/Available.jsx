@@ -25,9 +25,9 @@ export default styled(({className, data, onAdd}) => {
 
         return <div {...{className}}>
             <div className='header'>
-                <span>חיפוש:</span>
-                <input {...{value: searchText, onChange}}/>
+                <span/>
                 <h4>בחר מצרכים</h4>
+                <input {...{value: searchText, onChange, placeholder: "הקלד כאן..."}}/>
 
             </div>
 
