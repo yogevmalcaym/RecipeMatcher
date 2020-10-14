@@ -24,14 +24,14 @@ export const Available = css`
             
             ::placeholder {
                 color: #9e9e9e;
-                opacity: 1; /* Firefox */
+                opacity: 1; 
             }
             
-            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            :-ms-input-placeholder { 
                 color: #9e9e9e;
             }
             
-            ::-ms-input-placeholder { /* Microsoft Edge */
+            ::-ms-input-placeholder { 
                 color: #9e9e9e;
             }
         }

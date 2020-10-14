@@ -5,6 +5,14 @@ export const Recipe = css`
     padding: 10px 30px;
     width: 100%;
     
+    > h2 {
+        border-radius: 5px;
+        margin: 28px auto 35px auto;
+        width: fit-content;
+        padding: 10px;
+        box-shadow: 0 2px 3px 2px black;
+    }
+    
     > img {
         max-height: 300px;
         max-width: 100%;
@@ -28,13 +36,5 @@ export const Recipe = css`
     .list {
             text-align: start;
             padding: 0 10%;
-            
-            > li {
-              padding: 5px;
-              border-radius: 5px;
-              border: 1px solid #bababa;
-              margin: 5px 0;
-            }
-        
-        }
+    }
 `;

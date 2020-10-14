@@ -21,10 +21,8 @@ const MOCK = [
 
 export const getRecipe = async (ingredients) => {
     try {
-        console.log(ingredients)
         const res = await axios.get("http://193.106.55.98:80/getRecipe", {params: {ingredients}})
         if(!res.data) throw("Error");
-        console.log(res)
         return res.data;
 
     } catch (error) {

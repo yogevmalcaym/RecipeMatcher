@@ -10,12 +10,12 @@ export default styled(memo(({className, data = {}}) =>
         <img src={`/images/${data.pictureName}`}/>
 
         <h4>מצרכים</h4>
-        <ol {...{className: classNames("list", 'ingredients')}}>
+        <ul {...{className: classNames("list", 'ingredients')}}>
             {data.ingredients && data.ingredients.map((ingredient, index) =>
-                <li key={ingredient.name}>{ingredient.name}, {ingredient.amount}</li>
+                <li key={ingredient.name}>{ingredient.amount} {ingredient.name}</li>
             )
             }
-        </ol>
+        </ul>
 
         <h4>הוראות הכנה</h4>
         <ol {...{className: classNames("list", 'directions')}}>
