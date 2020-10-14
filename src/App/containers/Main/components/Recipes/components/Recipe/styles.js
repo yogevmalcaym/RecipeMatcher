@@ -21,10 +21,10 @@ export const Recipe = css`
     }
     
     h4 {
-        padding: 2px 10px;
-        box-shadow: 0px 3px 4px -3px #bababa;
-        align-self: center;
+        padding: 4px 10px;        
+        box-shadow: 0px 3px 6px -4px #896c6f;
         width: fit-content;
+        align-self: center;
         margin: 10px auto 20px auto;
       
     }

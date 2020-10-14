@@ -6,7 +6,7 @@ export const Header = css`
     
     > span {
         color: #87556f;
-        background-color: #322f3d;
+        background-color: #442C2E;
         cursor: pointer;
         justify-content: center;
         align-items: center;

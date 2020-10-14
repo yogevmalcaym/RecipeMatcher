@@ -11,6 +11,7 @@ export const Available = css`
         position: relative;
         justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
         
         > span {
             width: 191px;
@@ -38,8 +39,8 @@ export const Available = css`
         
         > h4 {
             margin: 0px 10px;
-            padding: 2px 10px;        
-            box-shadow: 0px 3px 4px -3px #bababa;
+            padding: 4px 10px;        
+            box-shadow: 0px 3px 6px -4px #896c6f;
             width: fit-content;
         }
     }
@@ -53,9 +54,7 @@ export const Available = css`
             box-shadow: 0px 0px 2px 2px #59405c;
             
             &:hover {
-                
-                background-color: #87556f;  
-                
+                background-color: #b08488;  
             }
         }
     }

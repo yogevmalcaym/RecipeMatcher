@@ -1,8 +1,9 @@
 import {css} from 'styled-components';
 
 export const Header = css`
-    color: #87556f;
-    background-color: #322f3d;
+    color: #FEEAE6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #442C2E;
     width: 100%;
     box-sizing: border-box;
     height: 70px;

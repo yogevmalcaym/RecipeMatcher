@@ -14,7 +14,7 @@ export const Recipes = css`
             font-size: 30px;
             cursor: pointer;
             border-radius: 10px;
-            background-color: #322f3d;
+            background-color: #442C2E;
             color: #87556f;
         }
 `;

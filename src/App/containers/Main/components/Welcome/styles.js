@@ -21,7 +21,7 @@ export const Welcome = css`
         cursor: pointer;
         border-radius: 10px;
         //background-color: #5fb75f7a;
-        background-color: #322f3d;
+        background-color: #442C2E;
         color: #87556f;
     }
     
